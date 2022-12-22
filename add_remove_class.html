@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jquery-3.6.2.min.js"></script>
+    <style>
+        .x
+        {
+            background-color: red;
+            color: white;
+            font-family: cursive;
+            font-size: 14px;
+        }
+    </style>
+<body>
+    <button class="add_btn">Add Css</button>
+    <button class="remove_btn">Remove Css</button>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error, hic illum ab sint officia natus voluptas veritatis dolore sit. Sed quasi nam officiis quis magni, quia at vitae hic!</p>
+    <script>
+        $(document).ready(function(){
+            $(".add_btn").click(function(){
+                $("p").addClass("x");
+            });
+
+            $(".remove_btn").click(function(){
+                $("p").removeClass("x");
+            });
+        });
+    </script>
+</body>
+</html>

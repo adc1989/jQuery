@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jquery-3.6.2.min.js"></script>
+    <style>
+        div
+        {
+                height: 300px;
+                width: 400px;
+                background-color:darkmagenta;
+        }
+        .btn1, .btn2
+        {
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button id="fade_out"class="btn1">fade Out</button>
+    <button id="fade_in" class="btn2">fade In</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#fade_out').click(function(){
+                $('div').fadeOut(2000);
+            });
+        });
+
+        $('#fade_in').click(function(){
+                $('div').fadeIn(2000);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .div_img
+        {
+            height: 400px;
+            width: 600px;
+        }
+        .div_img img
+        {
+            height: 400px;
+            width: 600px;
+        }
+        .btn1, .btn2
+        {
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_img">
+        <img src="/image/pexels-photo-1591447.jpeg">
+    </div>
+    
+    <button id="hide_me"class="btn1">Hide me</button>
+    <button id="show_me" class="btn2">Show me</button>
+    <script>
+        
+        $(document).ready(function()
+        {
+            $("#hide_me").click(function(){
+                $(".div_img img").hide(2000);
+            })
+
+            $("#show_me").click(function(){
+                $(".div_img img").show(2000);
+            })
+        })
+    </script>
+    
+</body>
+</html>
